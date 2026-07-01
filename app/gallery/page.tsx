@@ -6,7 +6,10 @@ import { site } from "@/app/lib/site";
 
 export const metadata: Metadata = {
   title: `Spa Gallery in ${site.business.city}`,
-  description: `View all Best, Premium Spa interior, massage room, therapy setup, jacuzzi and wellness ambience images for ${site.business.businessName}.`
+  description: `View all Best, Premium Spa interior, massage room, therapy setup, jacuzzi and wellness ambience images for ${site.business.businessName}.`,
+  alternates: {
+    canonical: "/gallery"
+  }
 };
 
 export default function GalleryPage() {

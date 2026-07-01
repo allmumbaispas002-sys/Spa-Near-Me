@@ -6,8 +6,19 @@ import { WhatsAppIcon } from "@/app/components/WhatsAppIcon";
 import { phoneHref, primaryPhone, primaryWhatsapp, site, whatsappHref } from "@/app/lib/site";
 
 export const metadata: Metadata = {
-  title: `Contact ${site.business.businessName}`,
-  description: `Call, WhatsApp or visit ${site.business.businessName}, best spa in ${site.business.city}.`
+  title: `Contact ${site.business.businessName} | Book Spa in ${site.business.city}`,
+  description: `Call, WhatsApp or visit ${site.business.businessName}, best spa in ${site.business.city}. Get directions and book your massage appointment today.`,
+  keywords: [
+    `contact ${site.business.businessName.toLowerCase()}`,
+    `spa address in ${site.business.city}`,
+    `spa phone number ${site.business.city}`,
+    `book massage in ${site.business.city}`,
+    `spa near Sakinaka Metro Station`,
+    `massage near Saki Vihar Road`
+  ],
+  alternates: {
+    canonical: "/contact"
+  }
 };
 
 export default function ContactPage() {

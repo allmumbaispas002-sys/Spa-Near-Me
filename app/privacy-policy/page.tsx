@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import { SiteFooter, SiteHeader, StickyCta } from "@/app/components/SiteChrome";
 import { site } from "@/app/lib/site";
 
-export const metadata: Metadata = { title: "Privacy Policy", description: `Privacy policy for ${site.business.businessName}.` };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: `Privacy policy for ${site.business.businessName}.`,
+  alternates: {
+    canonical: "/privacy-policy"
+  }
+};
 
 export default function PrivacyPage() {
   return (
